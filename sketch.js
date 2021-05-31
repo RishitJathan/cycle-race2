@@ -286,6 +286,6 @@ function createobstacle(){
       }
     }
   } 
-  camera.position.x=displayWidth/2.25;
+  camera.position.x=displayWidth/2;
 
 }
