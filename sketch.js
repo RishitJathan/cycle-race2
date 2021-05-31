@@ -2,13 +2,13 @@ var path,mainCyclist;
 var player1,player2,player3;
 var pathImg,mainRacerImg1,mainRacerImg2;
 var obstacle;
-
+var edges;
 var pink1Img,pink2Img;
 var yellow1Img,yellow2Img;
 var red1Img,red2Img;
 var gameoverImg,cyclebell;
 var obstacle1Img,obstacle2Img,obstacle3Img;
-var edges,edges2,edges3,edges4,edges_Img;
+
 var pinkCG, yellowCG,redCG;
 var obstacleG;
 
@@ -54,7 +54,7 @@ function preload(){
   
   
   obstacle3Img = loadImage("images/obstacle3.png");
-  edges_Img=loadImage("images/edges.png");
+  
 }
 
 function setup(){
@@ -114,7 +114,7 @@ function draw() {
   mainCyclist.y = World.mouseY;
   
   //making cyclist collide edges 
-  
+  edges=createEdgeSprite();
   mainCyclist.collide(edges);
   
   //reset the background
