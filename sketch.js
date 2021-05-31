@@ -77,15 +77,7 @@ function setup(){
   gameover.scale = 0.8;
   gameover.visible = false;  
   
-  edges=createSprite(320,425,2000,50);
-  edges2=createSprite(10,10,50,800);
-  edges3=createSprite(1190,10,50,800);
-  edges4=createSprite(320,-140,2000,50);
-  edges.shapeColor="green ";
-  edges2.shapeColor="green";
-  edges3.shapeColor="green";
-  edges4.shapeColor="green";
-
+  
   //creating group 
   pinkCG = new Group();
   yellowCG = new Group();
