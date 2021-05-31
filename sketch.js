@@ -286,6 +286,7 @@ function createobstacle(){
       }
     }
   } 
-  camera.position.x=displayWidth/2;
+  camera.position.x=displayWidth/1;
+  camera.position.y = mainCyclist.y;
 
 }
